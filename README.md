@@ -38,3 +38,8 @@ Una vez finalizado la ejecución de todos los scrit, debería verse así:
 
 
 ![dbcreada](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/9135dc6b-763d-40e0-9633-e56fe36e6e37)
+
+
+Con estas cuatro dimensiones creadas dentro de la base de datos: comercioelectrónico, avenzamos en la ejecución de operaciones de un escenario ideal:
+
+1

@@ -35,4 +35,6 @@ VALUE
 ('5','Lámpara de mesa','29.99','4');
 
 Una vez finalizado la ejecución de todos los scrit, debería verse así:
+
+
 ![dbcreada](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/9135dc6b-763d-40e0-9633-e56fe36e6e37)

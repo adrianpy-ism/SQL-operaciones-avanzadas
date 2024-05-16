@@ -47,5 +47,7 @@ inner join categorias on productos.id_categoria=categorias.id_categoria
 where categorias.nombre = 'Electrónica';
 Resultado:
 
+
+
 ![01](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/a3e4c388-d10b-411b-aa4e-d581ccc60eab)
 

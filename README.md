@@ -6,7 +6,7 @@ Ejecutamos un script, creado en la app de work bench, que creará una base de da
 
 comercioelectronico.sql
 
-ahora procederemos a cargar datos en cada una de las dimensiones creadas:
+Ahora procederemos a cargar datos en cada una de las dimensiones creadas:
 
 1
 INSERT INTO comercioelectronico.categorias (id_categoria, nombre)
@@ -43,4 +43,12 @@ Una vez finalizada la ejecución de las  cuatro query, debería verse así:
 
 Con estas cuatro dimensiones creadas dentro de la base de datos: comercioelectrónico, avenzamos en la ejecución de operaciones de un escenario ideal:
 
-1
+1 - Mostramos el nombre del producto y el precio de todos los productos de la categoría "Electrónica". Para esto relacionaremos dos tablas mediante inner join 
+
+SELECT productos.nombre, precio FROM comercioelectronico.productos
+inner join categorias on productos.id_categoria=categorias.id_categoria
+where categorias.nombre = 'Electrónica';
+
+Resultado:
+![01](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/a3e4c388-d10b-411b-aa4e-d581ccc60eab)
+

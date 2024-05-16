@@ -45,6 +45,7 @@ Con estas cuatro dimensiones creadas dentro de la base de datos: comercioelectr√
 SELECT productos.nombre, precio FROM comercioelectronico.productos
 inner join categorias on productos.id_categoria=categorias.id_categoria
 where categorias.nombre = 'Electr√≥nica';
+
 Resultado:
 
 

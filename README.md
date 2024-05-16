@@ -1,6 +1,6 @@
 # SQL-operaciones-avanzadas
 
-Creamos una base de datos para luego ejecutar algunas operaciones que se consideran avanzadas.
+Creamos una base de datos para luego ejecutar algunas operaciones que se consideran avanzadas. Todas las consultas están disponibles arriba.
 
 Ejecutamos un script, creado en la app de work bench, que creará una base de datos llamadas comercioelctrónico, con cuatro tablas:
 

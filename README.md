@@ -96,4 +96,32 @@ Resultado:
 
 ![05](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/001ddfdb-3502-41b0-8435-a1d3c4179926)
 
+6 - Mostramos los productos(nombre_producto y precio), cuyo precio es mayor que el precio promedio de todos los productos.
+Recurrimos a una condición dentro de where para establecer un parámetro de comparación.
+
+SELECT *
+FROM comercioelectronico.productos
+WHERE precio > (select FORMAT(AVG(precio), 2) from comercioelectronico.productos)
+
+Resultado:
+
+![06](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/ad942f92-6fc8-4194-a984-0bd64a85c149)
+
+7 - Por último, mostramos los clientes que tienen gastos mayores a 1000 en el total de sus pedidos.
+Para esto, es necesario sumar precios, agrupar por nombres de clientes; y para saber el monto total de sus compras y, luego comparar si tienen compras superiores a 1000. Para realizar esta tarea se recurrirá a relacionar las tablas con inner join.
+
+SELECT clientes.nombre as nombre_cliente,
+sum(productos.precio) as monto_total
+
+FROM comercioelectronico.pedidos
+
+inner join productos on pedidos.id_producto = productos.id_producto
+inner join clientes on clientes.id_cliente = pedidos.id_cliente
+GROUP BY nombre_cliente
+having SUM(productos.precio) > 1000;
+
+Resultado:
+
+![07](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/8ac5cd10-03cd-48c3-8790-de1d549789b8)
+
 

@@ -34,10 +34,11 @@ VALUE
 ('4','Sofá de cuero','999.99','3'),
 ('5','Lámpara de mesa','29.99','4');
 
-Una vez finalizado la ejecución de todos los scrit, debería verse así:
+Una vez finalizada la ejecución de las  cuatro queris, debería verse así:
+
+![dbcreada](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/326fa12f-8e94-4bfb-aea3-481104dd8c78)
 
 
-![dbcreada](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/9135dc6b-763d-40e0-9633-e56fe36e6e37)
 
 
 Con estas cuatro dimensiones creadas dentro de la base de datos: comercioelectrónico, avenzamos en la ejecución de operaciones de un escenario ideal:

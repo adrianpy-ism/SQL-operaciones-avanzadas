@@ -52,6 +52,30 @@ Resultado:
 
 ![01](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/a3e4c388-d10b-411b-aa4e-d581ccc60eab)
 
+2 - Contamos la cantidad de clientes de nuestra base de datos:
+
+SELECT COUNT(id_cliente) as 'total_clientes'
+
+FROM comercioelectronico.clientes;
+
+Resultado:
+
+
+![02](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/f7e62b92-c889-4ff0-9249-669ba782f574)
+
+
+3 - Mostrar el nombre de los productos y la fecha de los pedidos realizados por el cliente con el id_cliente igual a 1, ordenado por fecha descendente.
+
+SELECT fecha, nombre FROM comercioelectronico.productos
+inner join pedidos on productos.id_producto=pedidos.id_producto
+where id_cliente = '1'
+order by fecha ASC;
+
+Resultado:
+
+
+
+![03](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/ce55d2ec-3000-48df-9513-135120cf9b30)
 
 
 

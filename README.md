@@ -2,7 +2,7 @@
 
 Creamos una base de datos para luego ejecutar algunas operaciones que se consideran avanzadas.
 
-Ejecutamos un script, creado en la app de work bench, que creará una base de datos llamadas comercioelctrónico:
+Ejecutamos un script, creado en la app de work bench, que creará una base de datos llamadas comercioelctrónico, con cuatro tablas:
 
 comercioelectronico.sql
 
@@ -34,10 +34,10 @@ VALUE
 ('4','Sofá de cuero','999.99','3'),
 ('5','Lámpara de mesa','29.99','4');
 
-Una vez finalizada la ejecución de las  cuatro queris, debería verse así:
+Una vez finalizada la ejecución de las  cuatro query, debería verse así:
 
-![dbcreada](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/326fa12f-8e94-4bfb-aea3-481104dd8c78)
 
+![DB_creada](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/e2b40372-f3a6-440a-8e4b-cc6887549529)
 
 
 

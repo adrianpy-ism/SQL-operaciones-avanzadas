@@ -77,6 +77,23 @@ Resultado:
 
 ![03](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/ce55d2ec-3000-48df-9513-135120cf9b30)
 
+4 - Calculamos AVG, el precio promedio de todos los productos en la base de datos y con Format restringimos a dos dígitos los decimales.
 
+SELECT FORMAT(AVG(precio), 2)as precio_promedio
+FROM comercioelectronico.productos;
+
+Resultado:
+
+![04](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/b36c4636-5ab0-4858-b4e2-59e5485e9778)
+
+
+5 - Buscamos el producto más caro en la base de datos y mostramos su nombre y su precio. Usamos una condición dentro de where para seleccionar el precio máximo.
+
+SELECT nombre, precio FROM comercioelectronico.productos
+WHERE precio = (SELECT MAX(precio) FROM comercioelectronico.productos);
+
+Resultado:
+
+![05](https://github.com/adrianpy-ism/SQL-operaciones-avanzadas/assets/60670785/001ddfdb-3502-41b0-8435-a1d3c4179926)
 
 
